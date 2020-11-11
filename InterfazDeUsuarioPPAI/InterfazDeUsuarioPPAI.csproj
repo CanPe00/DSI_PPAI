@@ -90,10 +90,10 @@
     <Compile Include="Dominio\Subcategoria.cs" />
     <Compile Include="Dominio\SubcategoriaDeCarta.cs" />
     <Compile Include="Dominio\Usuario.cs" />
-    <Compile Include="NoPersistente\InformeProductosMasPedidos.cs">
+    <Compile Include="BuilderCU121\InformeProductosMasPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NoPersistente\InformeProductosMasPedidos.Designer.cs">
+    <Compile Include="BuilderCU121\InformeProductosMasPedidos.Designer.cs">
       <DependentUpon>InformeProductosMasPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="NoPersistente\PantallaInformeProductoMasPedidos.cs">
@@ -104,7 +104,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="NoPersistente\InformeProductosMasPedidos.resx">
+    <EmbeddedResource Include="BuilderCU121\InformeProductosMasPedidos.resx">
       <DependentUpon>InformeProductosMasPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoPersistente\PantallaInformeProductoMasPedidos.resx">

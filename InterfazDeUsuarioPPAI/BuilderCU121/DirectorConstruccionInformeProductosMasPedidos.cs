@@ -17,6 +17,13 @@ namespace InterfazDeUsuarioPPAI.BusinessLayer
             this._constructor = constructor;
         }
 
-        public void Contruir()
+        public void Contruir(DateTime fechaDesde, DateTime fechaHasta, string titulo, List<String> categorias, List<int> totalCategorias, List<String> subcategorias,
+            List<int> totalSubCategorias, List<String> productos, List<int> totalProductos, string usuarioLog, DateTime fechaHoraActual)
+        {
+            this._constructor.ContruirProducto();
+            this._constructor.ConstruirEncabezado(fechaDesde, fechaHasta,titulo);
+            this._constructor.ConstruirCuerpo(categorias, totalCategorias, subcategorias, totalSubCategorias, productos, totalProductos);
+            this._constructor.ConstruirPie(usuarioLog, fechaHoraActual);
+        }
     }
 }

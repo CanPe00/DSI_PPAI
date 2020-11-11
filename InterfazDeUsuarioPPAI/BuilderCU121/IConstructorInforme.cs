@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfazDeUsuarioPPAI.NoPersistente;
 
 namespace InterfazDeUsuarioPPAI.BusinessLayer.BuilderCU121
 {
     interface IConstructorInforme
     {
+        
         void ConstruirEncabezado(DateTime fechaDesde, DateTime fechaHasta, string titulo);
 
         void ConstruirCuerpo(List<String> categorias, List<int> totalCategorias, List<String> subcategorias,
