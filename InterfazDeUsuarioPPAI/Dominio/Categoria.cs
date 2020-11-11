@@ -18,6 +18,11 @@ namespace InterfazDeUsuarioPPAI.BusinessLayer
         public int IdCategoria { get => idCategoria; set => idCategoria = value; }
         public string Nombre { get => nombre; set => nombre = value; }
 
+        public override string ToString()
+        {
+            return Nombre;
+        }
+
         public IList<Categoria> GetAll()
         {
             List<Categoria> listadoCategoria = new List<Categoria>();

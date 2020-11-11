@@ -14,6 +14,10 @@ namespace InterfazDeUsuarioPPAI.BusinessLayer
 
         public int IdSubCategoria { get => idSubCategoria; set => idSubCategoria = value; }
         public string Nombre { get => nombre; set => nombre = value; }
+        public override string ToString()
+        {
+            return Nombre;
+        }
 
         public IList<Subcategoria> GetAll()
         {
@@ -35,14 +39,18 @@ namespace InterfazDeUsuarioPPAI.BusinessLayer
             return listadoSubcategoria;
         }
 
+        
+        
         private Subcategoria ObjectMapping(DataRow row)
         {
-            Subcategoria Subcategoria = new Subcategoria();
+            Subcategoria subcategoria = new Subcategoria
             {
-                IdSubCategoria = Convert.ToInt32(row["id_subcateg"].ToString());
-                Nombre = row["nombre"].ToString();
-            }
-            return Subcategoria;
+
+                IdSubCategoria = Convert.ToInt32(row["id_subcateg"].ToString()),
+                Nombre = row["nombre"].ToString()
+            };
+            
+            return subcategoria;
         }
     }
 }

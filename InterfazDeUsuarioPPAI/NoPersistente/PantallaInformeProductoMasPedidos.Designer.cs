@@ -44,6 +44,7 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             this.chklCategorias = new System.Windows.Forms.CheckedListBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.groupBoxSubcategorias = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.btnSelecSubCat = new System.Windows.Forms.Button();
             this.lblSubcategoria = new System.Windows.Forms.Label();
             this.groupBoxOrdenamiento = new System.Windows.Forms.GroupBox();
@@ -58,8 +59,6 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             this.cbkPDF = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pctMenu = new System.Windows.Forms.PictureBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBoxPeriodo.SuspendLayout();
             this.groupBoxCategorias.SuspendLayout();
             this.groupBoxSubcategorias.SuspendLayout();
@@ -217,7 +216,7 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             // 
             // chklCategorias
             // 
-            this.chklCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chklCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklCategorias.Location = new System.Drawing.Point(18, 62);
             this.chklCategorias.Name = "chklCategorias";
             this.chklCategorias.Size = new System.Drawing.Size(309, 132);
@@ -249,6 +248,15 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             this.groupBoxSubcategorias.TabIndex = 47;
             this.groupBoxSubcategorias.TabStop = false;
             this.groupBoxSubcategorias.Text = "3. SUBCATEGORÍAS";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(30, 62);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(309, 124);
+            this.checkedListBox1.TabIndex = 47;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // btnSelecSubCat
             // 
@@ -431,29 +439,12 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             this.pctMenu.TabIndex = 0;
             this.pctMenu.TabStop = false;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(30, 62);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(299, 124);
-            this.checkedListBox1.TabIndex = 47;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(228, 221);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 50;
-            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(842, 745);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBoxVisualizacion);
             this.Controls.Add(this.groupBoxSubcategorias);
             this.Controls.Add(this.groupBoxOrdenamiento);
@@ -517,6 +508,5 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
         private System.Windows.Forms.Button btnSelecVis;
         private System.Windows.Forms.CheckBox cbkExcel;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

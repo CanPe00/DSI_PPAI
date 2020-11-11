@@ -39,6 +39,10 @@ namespace InterfazDeUsuarioPPAI.NoPersistente
             listBox.ValueMember = value;
             listBox.SelectedIndex = -1;
         }
-        
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
